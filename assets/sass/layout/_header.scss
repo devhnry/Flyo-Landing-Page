@@ -1,0 +1,38 @@
+.header{
+    display: grid;
+    gap: 3.5rem;
+    text-align: center;
+    padding: 8rem 0;
+    width: 80%;
+    margin-inline: auto;
+
+    &__text{
+        display: grid;
+        gap: 2.3rem;
+
+        &--main{
+            font-family: $ff-heading;
+            font-size: 2.3rem;
+            font-weight: $fw-bold;
+            line-height: 1.4;
+        }
+
+        &--sub{
+            font-family: $ff-body;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__form{
+        display: grid;
+        gap: 1.5rem;
+        margin-top: -2.5rem;
+
+        &-box{
+            outline: none;
+            padding: 1rem;
+        }
+    }
+
+
+}

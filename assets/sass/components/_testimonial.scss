@@ -1,0 +1,35 @@
+.testimonial{
+    display: grid;
+    gap: 1rem;
+    background: $clr-white;
+    padding: 2.5rem;
+    margin-inline: auto;
+    width: 85%;
+    border-radius: 5px;
+    box-shadow:  0 .5rem 1rem rgba($clr-neutral-300, 0.2);
+
+    &__text{
+        color: rgba($clr-primary-dark, 0.6);
+        line-height: 1.7;
+    }
+
+    &__profilebox{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    &__avatar{
+        width: 2.5rem;
+        border-radius: 50%;
+    }
+
+    &__author{
+        &--main{
+            font-weight: $fw-bold;
+        }
+        &--sub{
+            font-size: .8rem;
+        }
+    }
+}

@@ -1,0 +1,245 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0; }
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%; }
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%; }
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit; }
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word; }
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #070439;
+  overflow-x: hidden; }
+
+.btn {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 1rem;
+  transition: all 150ms ease-in-out;
+  text-align: center; }
+  .btn--primary {
+    background: #3065f8;
+    font-weight: 700;
+    color: #f6f6fe;
+    border-radius: 3px; }
+    .btn--primary-cta {
+      font-size: 1rem;
+      font-weight: 400;
+      padding: .8rem; }
+    .btn--primary:hover, .btn--primary:focus {
+      background: #6d92f8; }
+  .btn--transparent {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 400;
+    width: max-content;
+    margin-inline: auto;
+    padding: .5rem;
+    background: transparent;
+    color: #3c9f8f;
+    border-bottom: solid 1px #3c9f8f; }
+    .btn--transparent:hover {
+      background: transparent;
+      color: #90d5c9;
+      border-bottom: solid 1px #90d5c9; }
+
+.testimonial {
+  display: grid;
+  gap: 1rem;
+  background: white;
+  padding: 2.5rem;
+  margin-inline: auto;
+  width: 85%;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(191, 191, 191, 0.2); }
+  .testimonial__text {
+    color: rgba(7, 4, 57, 0.6);
+    line-height: 1.7; }
+  .testimonial__profilebox {
+    display: flex;
+    gap: 1rem;
+    align-items: center; }
+  .testimonial__avatar {
+    width: 2.5rem;
+    border-radius: 50%; }
+  .testimonial__author--main {
+    font-weight: 700; }
+  .testimonial__author--sub {
+    font-size: .8rem; }
+
+.footer {
+  background: #070439;
+  color: #f6f6fe;
+  padding: 5rem 5rem 2rem;
+  font-size: 1.5rem;
+  display: grid;
+  gap: 3.5rem; }
+  .footer__logo {
+    filter: brightness(0) invert(1);
+    margin-bottom: 4rem; }
+  .footer__contacts p {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 1.5rem; }
+  .footer__list {
+    display: grid;
+    gap: 1.5rem;
+    text-decoration: none; }
+  .footer__link {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    color: #f6f6fe; }
+
+.socials {
+  display: flex;
+  align-items: center;
+  margin-inline: auto; }
+  .socials__icon {
+    text-align: center;
+    width: 37px;
+    transform: scale(70%);
+    padding: 1rem;
+    border: solid 1px #f6f6fe;
+    border-radius: 50%; }
+
+.header {
+  display: grid;
+  gap: 3.5rem;
+  text-align: center;
+  padding: 8rem 0;
+  width: 80%;
+  margin-inline: auto; }
+  .header__text {
+    display: grid;
+    gap: 2.3rem; }
+    .header__text--main {
+      font-family: "Raleway", sans-serif;
+      font-size: 2.3rem;
+      font-weight: 700;
+      line-height: 1.4; }
+    .header__text--sub {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.4rem; }
+  .header__form {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: -2.5rem; }
+    .header__form-box {
+      outline: none;
+      padding: 1rem; }
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  padding-top: 2rem; }
+  .navigation__logo {
+    width: 8rem; }
+  .navigation__list {
+    display: flex;
+    gap: 2rem;
+    list-style: none; }
+  .navigation__link {
+    text-decoration: none;
+    color: #070439; }
+
+.feature {
+  background: #f6f6fe;
+  padding: 4rem 2.5rem 8rem; }
+  .feature__img {
+    padding-inline: 1rem;
+    margin-bottom: 8rem; }
+  .feature__content {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 4rem; }
+  .feature__header {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-weight: bold; }
+  .feature__text-box {
+    display: grid;
+    gap: 1.5rem;
+    font-size: 1.3rem;
+    color: rgba(7, 4, 57, 0.6); }
+
+.sign-up {
+  text-align: center;
+  padding: 5rem;
+  background: #585989;
+  color: #f6f6fe;
+  display: grid;
+  gap: 2rem; }
+  .sign-up__header {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem; }
+  .sign-up__text-box {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    display: grid;
+    gap: 1.5rem; }
+  .sign-up__form {
+    display: grid;
+    gap: .8rem;
+    width: 90%;
+    margin-inline: auto; }
+    .sign-up__form-box {
+      outline: none;
+      border: none;
+      padding: .8rem;
+      color: rgba(7, 4, 57, 0.5); }

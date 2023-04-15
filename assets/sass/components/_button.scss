@@ -1,0 +1,46 @@
+.btn{
+    font-family: $ff-cta;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 1rem;
+    transition: all 150ms ease-in-out;
+    text-align: center;
+
+    &--primary{    
+        background: $clr-accent-blue;
+        font-weight: $fw-bold;
+        color: $clr-neutral-100;
+        border-radius: 3px;
+
+        &-cta{
+            font-size: 1rem;
+            font-weight: $fw-regular;
+            padding: .8rem;
+        }
+
+        &:hover,
+        &:focus{
+            background: $clr-accent-blue-hover;
+        }
+    }
+
+    &--transparent{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-weight: $fw-regular;
+        width: max-content;
+        margin-inline: auto;
+        padding: .5rem;
+        background: transparent;
+        color: $clr-accent-cyan;
+        border-bottom: solid 1px $clr-accent-cyan;
+
+        &:hover{
+            background: transparent;
+            color: $clr-accent-cyan-hover;
+            border-bottom: solid 1px $clr-accent-cyan-hover;
+
+        }
+    }
+}

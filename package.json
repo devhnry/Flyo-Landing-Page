@@ -1,0 +1,17 @@
+{
+  "name": "flyo-landing-page",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "author": "Henry",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "compile:sass": "node-sass ./assets/sass/main.scss ./assets/css/style.css -w"
+  },
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "vite": "^4.2.0"
+  }
+}
