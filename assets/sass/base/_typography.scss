@@ -57,3 +57,16 @@
         color: rgba($clr-primary-dark, 0.6);
     }
 }
+
+.sign-up{
+    &__header{
+        font-family: $ff-heading;
+        font-weight: $fw-bold;
+        font-size: 1.7rem;
+    }
+
+    &__text-box{
+        font-family: $ff-body;
+        font-size: 1.3rem;
+    }
+}

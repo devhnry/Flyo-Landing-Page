@@ -49,15 +49,7 @@
         gap: 4rem;
     }
 
-    &__header{
-        font-family: $ff-heading;
-        font-weight: $fw-bold;
-        font-size: 1.7rem;
-    }
-
     &__text-box{
-        font-family: $ff-body;
-        font-size: 1.3rem;
         display: grid;
         gap: 1.5rem;
     }
