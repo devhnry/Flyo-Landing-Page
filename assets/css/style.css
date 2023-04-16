@@ -215,6 +215,10 @@ body {
     .footer {
       gap: 5rem;
       grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 56.25em) {
+    .footer {
+      gap: 5rem;
+      grid-template-columns: repeat(4, 1fr); } }
   .footer__logo {
     filter: brightness(0) invert(1);
     margin-bottom: 4rem; }
@@ -227,6 +231,9 @@ body {
     display: grid;
     gap: 1.5rem;
     text-decoration: none; }
+    @media (min-width: 56.25em) {
+      .footer__list {
+        gap: .8rem; } }
 
 .socials {
   display: flex;
@@ -235,6 +242,9 @@ body {
   @media (min-width: 37.5em) {
     .socials {
       grid-column: 1 / 4; } }
+  @media (min-width: 56.25em) {
+    .socials {
+      grid-column: 4 / 4; } }
   .socials__icon {
     text-align: center;
     width: 37px;

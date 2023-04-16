@@ -9,6 +9,11 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    @include respond(tab-port){
+        gap : 5rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     &__logo{
         filter: brightness(0) invert(1);
         margin-bottom: 4rem;
@@ -25,6 +30,10 @@
         display: grid;
         gap: 1.5rem;
         text-decoration: none;
+
+        @include respond(tab-port){
+            gap: .8rem;
+        }
     }
 }
 
@@ -35,6 +44,10 @@
 
     @include respond(phone){
         grid-column: 1 / 4;
+    }
+
+    @include respond(tab-port){
+        grid-column: 4 / 4;
     }
 
     &__icon{
