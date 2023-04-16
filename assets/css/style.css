@@ -115,7 +115,8 @@ body {
   font-weight: bold; }
   @media (min-width: 37.5em) {
     .feature__header {
-      text-align: left; } }
+      text-align: left;
+      font-size: 1.8rem; } }
 
 .feature__text-box {
   font-size: 1.3rem;
@@ -125,6 +126,9 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 1.7rem; }
+  @media (min-width: 37.5em) {
+    .sign-up__header {
+      font-size: 2rem; } }
 
 .sign-up__text-box {
   font-family: "Open Sans", sans-serif;
@@ -238,13 +242,26 @@ body {
   padding: 8rem 0;
   width: 80%;
   margin-inline: auto; }
+  @media (min-width: 56.25em) {
+    .header {
+      width: 87%;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center; } }
+  @media (min-width: 56.25em) {
+    .header__img {
+      grid-column-start: 2;
+      grid-row-start: 1; } }
   @media (min-width: 37.5em) {
     .header__textbox {
       text-align: left;
       display: grid;
-      grid-template-columns: 60% 40%;
+      grid-template-columns: repeat(2, 1fr);
       align-items: center;
       gap: 4rem; } }
+  @media (min-width: 56.25em) {
+    .header__textbox {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0; } }
   .header__text {
     display: grid;
     gap: 2.3rem; }

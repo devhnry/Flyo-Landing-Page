@@ -49,6 +49,7 @@
 
         @include respond(phone){
             text-align: left;
+            font-size: 1.8rem;
         }
     }
 
@@ -63,6 +64,10 @@
         font-family: $ff-heading;
         font-weight: $fw-bold;
         font-size: 1.7rem;
+
+        @include respond(phone){
+            font-size: 2rem;
+        }
     }
 
     &__text-box{
