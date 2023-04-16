@@ -67,6 +67,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 html {
   font-size: 62.5%; }
+  @media (min-width: 600px) {
+    html {
+      font-size: 70%; } }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -77,13 +80,36 @@ body {
     body {
       margin-inline: auto; } }
 
+.navigation {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  transition: all 250ms ease-in-out; }
+  .navigation__link {
+    text-decoration: none;
+    color: #070439; }
+
+.header__text--main {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 1.4; }
+  @media (min-width: 37.5em) {
+    .header__text--main {
+      font-size: 2.6rem; } }
+
+.header__text--sub {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem; }
+
 .btn {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   font-size: 1.3rem;
   padding: 1rem;
   transition: all 150ms ease-in-out;
-  text-align: center; }
+  text-align: center;
+  border: none;
+  outline: none; }
   .btn--primary {
     background: #3065f8;
     font-weight: 700;
@@ -93,7 +119,7 @@ body {
       font-size: 1rem;
       font-weight: 400;
       padding: .8rem; }
-    .btn--primary:hover, .btn--primary:focus {
+    .btn--primary:hover {
       background: #6d92f8; }
   .btn--transparent {
     display: flex;
@@ -146,6 +172,10 @@ body {
   font-size: 1.5rem;
   display: grid;
   gap: 3.5rem; }
+  @media (min-width: 37.5em) {
+    .footer {
+      gap: 5rem;
+      grid-template-columns: repeat(3, 1fr); } }
   .footer__logo {
     filter: brightness(0) invert(1);
     margin-bottom: 4rem; }
@@ -167,6 +197,9 @@ body {
   display: flex;
   align-items: center;
   margin-inline: auto; }
+  @media (min-width: 37.5em) {
+    .socials {
+      grid-column: 1 / 4; } }
   .socials__icon {
     text-align: center;
     width: 37px;
@@ -192,14 +225,6 @@ body {
   .header__text {
     display: grid;
     gap: 2.3rem; }
-    .header__text--main {
-      font-family: "Raleway", sans-serif;
-      font-size: 2.3rem;
-      font-weight: 700;
-      line-height: 1.4; }
-    .header__text--sub {
-      font-family: "Open Sans", sans-serif;
-      font-size: 1.4rem; }
   .header__form {
     display: grid;
     gap: 1.5rem;
@@ -213,8 +238,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-inline: 2rem;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.2rem;
   padding-top: 2rem; }
   .navigation__logo {
     width: 8rem; }
@@ -222,9 +245,6 @@ body {
     display: flex;
     gap: 2rem;
     list-style: none; }
-  .navigation__link {
-    text-decoration: none;
-    color: #070439; }
 
 .bg-pattern {
   width: 100vw; }

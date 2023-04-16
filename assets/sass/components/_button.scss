@@ -5,6 +5,8 @@
     padding: 1rem;
     transition: all 150ms ease-in-out;
     text-align: center;
+    border: none;
+    outline: none;
 
     &--primary{    
         background: $clr-accent-blue;
@@ -18,8 +20,7 @@
             padding: .8rem;
         }
 
-        &:hover,
-        &:focus{
+        &:hover{
             background: $clr-accent-blue-hover;
         }
     }
