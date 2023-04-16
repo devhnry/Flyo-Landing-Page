@@ -81,7 +81,14 @@
             outline: none;
             border: none;
             padding: .8rem;
+            border-radius: 3px;
             color: rgba($clr-primary-dark, 0.5);
+        }
+    }
+
+    &__button{
+        @include respond(phone){
+            max-width: 13em;
         }
     }
 }
