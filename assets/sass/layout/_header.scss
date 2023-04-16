@@ -43,10 +43,26 @@
         display: grid;
         gap: 1.5rem;
         margin-top: 1rem;
+
+        @include respond(tab-port){
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.2rem;
+            align-items: center;
+        }
         
         &-box{
             outline: none;
             padding: 1rem;
+
+            @include respond(tab-port){
+                grid-column-start: 1;
+            }
+        }
+    }
+
+    &__button{
+        @include respond(tab-port){
+            max-width: 11em;
         }
     }
 }

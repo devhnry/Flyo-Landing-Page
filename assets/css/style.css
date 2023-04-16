@@ -269,9 +269,20 @@ body {
     display: grid;
     gap: 1.5rem;
     margin-top: 1rem; }
+    @media (min-width: 56.25em) {
+      .header__form {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+        align-items: center; } }
     .header__form-box {
       outline: none;
       padding: 1rem; }
+      @media (min-width: 56.25em) {
+        .header__form-box {
+          grid-column-start: 1; } }
+  @media (min-width: 56.25em) {
+    .header__button {
+      max-width: 11em; } }
 
 .navigation {
   display: flex;
