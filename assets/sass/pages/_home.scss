@@ -27,21 +27,9 @@
         margin-bottom: 4rem;
     }
 
-    &__header{
-        font-family: $ff-heading;
-        text-align: center;
-        font-weight: bold;
-
-        @include respond(phone){
-            text-align: left;
-        }
-    }
-
     &__text-box{
         display: grid;
         gap: 1.5rem;
-        font-size: 1.3rem;
-        color: rgba($clr-primary-dark, 0.6);
     }
 }
 

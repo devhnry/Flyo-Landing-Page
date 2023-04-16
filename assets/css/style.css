@@ -101,6 +101,26 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.4rem; }
 
+.footer {
+  font-size: 1.5rem;
+  color: #f6f6fe; }
+  .footer__link {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    color: #f6f6fe; }
+
+.feature__header {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-weight: bold; }
+  @media (min-width: 37.5em) {
+    .feature__header {
+      text-align: left; } }
+
+.feature__text-box {
+  font-size: 1.3rem;
+  color: rgba(7, 4, 57, 0.6); }
+
 .btn {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
@@ -167,9 +187,7 @@ body {
 
 .footer {
   background: #070439;
-  color: #f6f6fe;
   padding: 5rem 5rem 2rem;
-  font-size: 1.5rem;
   display: grid;
   gap: 3.5rem; }
   @media (min-width: 37.5em) {
@@ -188,10 +206,6 @@ body {
     display: grid;
     gap: 1.5rem;
     text-decoration: none; }
-  .footer__link {
-    font-family: "Raleway", sans-serif;
-    text-decoration: none;
-    color: #f6f6fe; }
 
 .socials {
   display: flex;
@@ -266,18 +280,9 @@ body {
     display: grid;
     gap: 2rem;
     margin-bottom: 4rem; }
-  .feature__header {
-    font-family: "Raleway", sans-serif;
-    text-align: center;
-    font-weight: bold; }
-    @media (min-width: 37.5em) {
-      .feature__header {
-        text-align: left; } }
   .feature__text-box {
     display: grid;
-    gap: 1.5rem;
-    font-size: 1.3rem;
-    color: rgba(7, 4, 57, 0.6); }
+    gap: 1.5rem; }
 
 .sign-up {
   text-align: center;

@@ -7,7 +7,6 @@
     margin-inline: auto;
 
     &__textbox{
-
         @include respond(phone){
             text-align: left;
             display: grid;

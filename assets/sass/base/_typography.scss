@@ -11,7 +11,6 @@
 
 .header{
     &__text{
-        
         &--main{
             font-family: $ff-heading;
             font-size: 2.3rem;
@@ -27,5 +26,34 @@
             font-family: $ff-body;
             font-size: 1.4rem;
         }
+    }
+}
+
+.footer{
+    font-size: 1.5rem;
+    color: $clr-neutral-100;
+    
+    &__link{
+        font-family: $ff-cta;
+        text-decoration: none;
+        color: $clr-neutral-100;
+    }
+}
+
+.feature{
+
+    &__header{
+        font-family: $ff-heading;
+        text-align: center;
+        font-weight: bold;
+
+        @include respond(phone){
+            text-align: left;
+        }
+    }
+
+    &__text-box{
+        font-size: 1.3rem;
+        color: rgba($clr-primary-dark, 0.6);
     }
 }
