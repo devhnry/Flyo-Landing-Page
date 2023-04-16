@@ -6,18 +6,35 @@
     background: $clr-neutral-100;
     padding: 4rem 2.5rem 8rem;
 
+    @include respond(tab-port){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
     &__img{
         padding-inline: 1rem;
         margin-bottom: 8rem;
+
+        @include respond(tab-port){
+            margin-bottom: 0rem;
+        }
     }
 
     &__contentbox{
+
         @include respond(phone){
             text-align: left;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             align-items: center;
             gap: 3rem;
+        }
+
+        @include respond(tab-port){
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0;
+            grid-row-start: 1;
         }
     }
 

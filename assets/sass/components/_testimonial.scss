@@ -8,6 +8,11 @@
     border-radius: 5px;
     box-shadow:  0 .5rem 1rem rgba($clr-neutral-300, 0.2);
 
+    @include respond(tab-port){
+        margin-inline: 0;
+    }
+
+
     &__text{
         color: rgba($clr-primary-dark, 0.6);
         line-height: 1.7;
