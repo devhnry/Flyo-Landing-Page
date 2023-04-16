@@ -1,3 +1,7 @@
+.bg-pattern{
+    width: 100vw;
+}
+
 .feature{
     background: $clr-neutral-100;
     padding: 4rem 2.5rem 8rem;
@@ -5,6 +9,16 @@
     &__img{
         padding-inline: 1rem;
         margin-bottom: 8rem;
+    }
+
+    &__contentbox{
+        @include respond(phone){
+            text-align: left;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 3rem;
+        }
     }
 
     &__content{
@@ -17,6 +31,10 @@
         font-family: $ff-heading;
         text-align: center;
         font-weight: bold;
+
+        @include respond(phone){
+            text-align: left;
+        }
     }
 
     &__text-box{
@@ -34,6 +52,14 @@
     color: $clr-neutral-100;
     display: grid;
     gap: 2rem;
+
+    @include respond(phone){
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 4rem;
+    }
 
     &__header{
         font-family: $ff-heading;

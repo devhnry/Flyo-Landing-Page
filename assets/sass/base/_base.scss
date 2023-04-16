@@ -7,6 +7,11 @@ body{
     font-weight: 400;
     color: $clr-primary-dark;
     overflow-x: hidden;
+
+    @include respond(phone){
+        // max-width: 700px;
+        margin-inline: auto;
+    }
 }
 
 

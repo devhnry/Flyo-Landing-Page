@@ -36,6 +36,11 @@
         color: $clr-accent-cyan;
         border-bottom: solid 1px $clr-accent-cyan;
 
+        @include respond(phone){
+            text-align: left;
+            margin-inline: 0;
+        }
+
         &:hover{
             background: transparent;
             color: $clr-accent-cyan-hover;

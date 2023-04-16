@@ -1,4 +1,19 @@
 /*
+0 - 600px is where my normal styles apply
+600px - 900px: 
+900px - 1200px:
+1200px -1800px : 
+1800px + : Big destop
+
+$breakpoint arguement choices
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+ORDER: Base + Typography > General Layout + Grid > Page layout > componets
+*/
+/*
   1. Use a more-intuitive box-sizing model.
 */
 *, *::before, *::after {
@@ -58,6 +73,9 @@ body {
   font-weight: 400;
   color: #070439;
   overflow-x: hidden; }
+  @media (min-width: 37.5em) {
+    body {
+      margin-inline: auto; } }
 
 .btn {
   font-family: "Raleway", sans-serif;
@@ -88,6 +106,10 @@ body {
     background: transparent;
     color: #3c9f8f;
     border-bottom: solid 1px #3c9f8f; }
+    @media (min-width: 37.5em) {
+      .btn--transparent {
+        text-align: left;
+        margin-inline: 0; } }
     .btn--transparent:hover {
       background: transparent;
       color: #90d5c9;
@@ -99,7 +121,7 @@ body {
   background: white;
   padding: 2.5rem;
   margin-inline: auto;
-  width: 85%;
+  max-width: 27.265rem;
   border-radius: 5px;
   box-shadow: 0 0.5rem 1rem rgba(191, 191, 191, 0.2); }
   .testimonial__text {
@@ -160,6 +182,13 @@ body {
   padding: 8rem 0;
   width: 80%;
   margin-inline: auto; }
+  @media (min-width: 37.5em) {
+    .header__textbox {
+      text-align: left;
+      display: grid;
+      grid-template-columns: 60% 40%;
+      align-items: center;
+      gap: 4rem; } }
   .header__text {
     display: grid;
     gap: 2.3rem; }
@@ -174,7 +203,7 @@ body {
   .header__form {
     display: grid;
     gap: 1.5rem;
-    margin-top: -2.5rem; }
+    margin-top: 1rem; }
     .header__form-box {
       outline: none;
       padding: 1rem; }
@@ -197,12 +226,22 @@ body {
     text-decoration: none;
     color: #070439; }
 
+.bg-pattern {
+  width: 100vw; }
+
 .feature {
   background: #f6f6fe;
   padding: 4rem 2.5rem 8rem; }
   .feature__img {
     padding-inline: 1rem;
     margin-bottom: 8rem; }
+  @media (min-width: 37.5em) {
+    .feature__contentbox {
+      text-align: left;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      gap: 3rem; } }
   .feature__content {
     display: grid;
     gap: 2rem;
@@ -211,6 +250,9 @@ body {
     font-family: "Raleway", sans-serif;
     text-align: center;
     font-weight: bold; }
+    @media (min-width: 37.5em) {
+      .feature__header {
+        text-align: left; } }
   .feature__text-box {
     display: grid;
     gap: 1.5rem;
@@ -224,6 +266,13 @@ body {
   color: #f6f6fe;
   display: grid;
   gap: 2rem; }
+  @media (min-width: 37.5em) {
+    .sign-up {
+      text-align: left;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      gap: 4rem; } }
   .sign-up__header {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
