@@ -93,9 +93,9 @@ body {
   font-size: 2.3rem;
   font-weight: 700;
   line-height: 1.4; }
-  @media (min-width: 37.5em) {
+  @media (min-width: 56.25em) {
     .header__text--main {
-      font-size: 2.6rem; } }
+      font-size: 2.65rem; } }
 
 .header__text--sub {
   font-family: "Open Sans", sans-serif;
@@ -213,7 +213,7 @@ body {
   gap: 3.5rem; }
   @media (min-width: 37.5em) {
     .footer {
-      gap: 0;
+      gap: .5rem;
       grid-template-columns: repeat(3, 1fr);
       font-size: 1rem;
       align-items: start; } }
@@ -275,6 +275,9 @@ body {
   padding: 8rem 0;
   width: 80%;
   margin-inline: auto; }
+  @media (min-width: 37.5em) {
+    .header {
+      width: 90%; } }
   @media (min-width: 56.25em) {
     .header {
       width: 87%;

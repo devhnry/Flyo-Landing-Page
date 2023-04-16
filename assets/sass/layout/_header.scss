@@ -6,6 +6,10 @@
     width: 80%;
     margin-inline: auto;
 
+     @include respond(phone){
+        width: 90%;
+    }
+
     @include respond(tab-port){
         width: 87%;
         grid-template-columns: repeat(2, 1fr);
