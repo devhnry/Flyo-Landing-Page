@@ -76,12 +76,27 @@
             @include respond(tab-port){
                 grid-column-start: 1;
             }
+
+            &:focus:invalid{
+                border: solid 1px $clr-error;
+            }
+
+            &:focus:invalid + &__error-text{
+                display: block;
+            }
+
+            &__error-text{
+                margin-top: -1.6rem;
+                color: $clr-error;
+                display: none;
+            }
         }
-    }
 
     &__button{
         @include respond(tab-port){
             max-width: 11em;
         }
     }
+}
+
 }

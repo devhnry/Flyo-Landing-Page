@@ -356,9 +356,17 @@ body {
       @media (min-width: 56.25em) {
         .header__form-box {
           grid-column-start: 1; } }
-  @media (min-width: 56.25em) {
-    .header__button {
-      max-width: 11em; } }
+      .header__form-box:focus:invalid {
+        border: solid 1px #ff8080; }
+      .header__form-box:focus:invalid + .header__form-box__error-text {
+        display: block; }
+      .header__form-box__error-text {
+        margin-top: -1.6rem;
+        color: #ff8080;
+        display: none; }
+    @media (min-width: 56.25em) {
+      .header__form__button {
+        max-width: 11em; } }
 
 .navigation {
   display: flex;
@@ -474,6 +482,14 @@ body {
       border-radius: 3px;
       color: rgba(7, 4, 57, 0.5);
       max-width: 36rem; }
+      .sign-up__form-box:focus:invalid {
+        border: solid 1px #ff8080; }
+      .sign-up__form-box:focus:invalid + .sign-up__form-box__error-text {
+        display: block; }
+      .sign-up__form-box__error-text {
+        margin-top: -1rem;
+        color: #ff8080;
+        display: none; }
   @media (min-width: 37.5em) {
     .sign-up__button {
       max-width: 13em; } }

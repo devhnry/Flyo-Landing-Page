@@ -112,6 +112,20 @@
             border-radius: 3px;
             color: rgba($clr-primary-dark, 0.5);
             max-width: 36rem;
+
+            &:focus:invalid{
+                border: solid 1px $clr-error;
+            }
+
+            &:focus:invalid + &__error-text{
+                display: block;
+            }
+
+            &__error-text{
+                margin-top: -1rem;
+                color: $clr-error;
+                display: none;
+            }
         }
     }
 
