@@ -94,6 +94,7 @@
         display: grid;
         gap: 1.5rem;
         max-width: 41.5rem;
+        margin-inline: auto;
 
         @include respond(tab-land){
             gap: .7rem;
@@ -104,7 +105,12 @@
         display: grid;
         gap: .8rem;
         width: 90%;
+        max-width: 36rem;
         margin-inline: auto ;
+
+        @include respond(phone){
+            width: 90%;
+        }
 
         &-box{
             outline: none;
@@ -123,14 +129,16 @@
             }
 
             &__error-text{
-                margin-top: -1rem;
+                margin-top: -.8rem;
                 color: $clr-error;
                 display: none;
+                text-align: left;
             }
         }
     }
 
     &__button{
+        max-width: 35.9rem;
         @include respond(phone){
             max-width: 13em;
         }

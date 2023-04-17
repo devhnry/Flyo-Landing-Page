@@ -59,6 +59,7 @@
     }
 
     &__form{
+        position: relative;
         display: grid;
         gap: 1.5rem;
         margin-top: 1rem;
@@ -89,6 +90,12 @@
                 margin-top: -1.6rem;
                 color: $clr-error;
                 display: none;
+                text-align: left;
+
+                @include respond(tab-port){
+                    position: absolute;
+                    top: 130%;
+                }
             }
         }
 

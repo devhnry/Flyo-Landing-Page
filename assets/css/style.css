@@ -342,6 +342,7 @@ body {
     display: grid;
     gap: 2.3rem; }
   .header__form {
+    position: relative;
     display: grid;
     gap: 1.5rem;
     margin-top: 1rem; }
@@ -363,7 +364,12 @@ body {
       .header__form-box__error-text {
         margin-top: -1.6rem;
         color: #ff8080;
-        display: none; }
+        display: none;
+        text-align: left; }
+        @media (min-width: 56.25em) {
+          .header__form-box__error-text {
+            position: absolute;
+            top: 130%; } }
     @media (min-width: 56.25em) {
       .header__form__button {
         max-width: 11em; } }
@@ -467,7 +473,8 @@ body {
   .sign-up__text-box {
     display: grid;
     gap: 1.5rem;
-    max-width: 41.5rem; }
+    max-width: 41.5rem;
+    margin-inline: auto; }
     @media (min-width: 75em) {
       .sign-up__text-box {
         gap: .7rem; } }
@@ -475,7 +482,11 @@ body {
     display: grid;
     gap: .8rem;
     width: 90%;
+    max-width: 36rem;
     margin-inline: auto; }
+    @media (min-width: 37.5em) {
+      .sign-up__form {
+        width: 90%; } }
     .sign-up__form-box {
       outline: none;
       border: none;
@@ -488,9 +499,12 @@ body {
       .sign-up__form-box:focus:invalid + .sign-up__form-box__error-text {
         display: block; }
       .sign-up__form-box__error-text {
-        margin-top: -1rem;
+        margin-top: -.8rem;
         color: #ff8080;
-        display: none; }
-  @media (min-width: 37.5em) {
-    .sign-up__button {
-      max-width: 13em; } }
+        display: none;
+        text-align: left; }
+  .sign-up__button {
+    max-width: 35.9rem; }
+    @media (min-width: 37.5em) {
+      .sign-up__button {
+        max-width: 13em; } }
