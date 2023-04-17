@@ -477,6 +477,7 @@ body {
     margin-inline: auto; }
     @media (min-width: 75em) {
       .sign-up__text-box {
+        margin-inline: 0;
         gap: .7rem; } }
   .sign-up__form {
     display: grid;

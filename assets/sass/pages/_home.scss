@@ -97,6 +97,7 @@
         margin-inline: auto;
 
         @include respond(tab-land){
+            margin-inline: 0;
             gap: .7rem;
         }
     }
