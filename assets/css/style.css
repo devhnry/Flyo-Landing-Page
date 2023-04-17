@@ -409,6 +409,7 @@ body {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
+      padding-inline: 4.8rem;
       max-width: 102.67rem; } }
   @media (min-width: 75em) {
     .feature {
