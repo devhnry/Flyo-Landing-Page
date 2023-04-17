@@ -4,9 +4,26 @@
     justify-content: space-between;
     padding-inline: 2rem;
     padding-top: 2rem;
+    max-width: 1400px;
+    margin-inline: auto;
+
+    @include respond(phone){
+        padding-inline: 3.5rem;
+        padding-top: 2.5rem;
+    }
+
+    @include respond(tab-port){
+        padding-inline: 6rem;
+        padding-top: 4rem;
+    }
 
     &__logo{
         width: 8rem;
+
+    @include respond(tab-port){
+        width: 10rem;
+
+    }
     }
 
     &__list{

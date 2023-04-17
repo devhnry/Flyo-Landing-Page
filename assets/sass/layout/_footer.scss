@@ -3,6 +3,8 @@
     padding: 5rem 5rem 2rem;
     display: grid;
     gap: 3.5rem;
+    max-width: 117rem;
+    margin-inline: auto;
 
     @include respond(phone){
         gap: .5rem;
@@ -15,6 +17,10 @@
         grid-template-columns: repeat(4, 1fr);
         align-items: start;
         }
+
+    @include respond(tab-land){
+        padding-bottom: 5rem;
+    }
 
     &__logo{
         filter: brightness(0) invert(1);
@@ -71,11 +77,17 @@
     }
 
     &__icon{
+        cursor: pointer;
         text-align: center;
         width: 37px;
         transform: scale(70%);
         padding: 1rem;
         border: solid 1px $clr-neutral-100;
         border-radius: 50%;
+
+        &:hover{
+            color: $clr-primary-light;
+            border: solid 1px $clr-primary-light;
+        }
     }
 }

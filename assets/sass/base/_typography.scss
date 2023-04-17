@@ -20,6 +20,10 @@
             @include respond(tab-port) {
                 font-size: 2.65rem;
             }
+
+            @include respond(tab-port) {
+                font-size: 3rem;
+            }
         }
 
         &--sub{
@@ -29,16 +33,6 @@
     }
 }
 
-.footer{
-    font-size: 1.5rem;
-    color: $clr-neutral-100;
-    
-    &__link{
-        font-family: $ff-cta;
-        text-decoration: none;
-        color: $clr-neutral-100;
-    }
-}
 
 .feature{
 
@@ -46,6 +40,8 @@
         font-family: $ff-heading;
         text-align: center;
         font-weight: bold;
+        font-size: 1.6rem;
+        transition: all 250ms ease-in-out;
 
         @include respond(phone){
             text-align: left;
@@ -55,6 +51,10 @@
         @include respond(tab-port){
             text-align: left;
             font-size: 2.3rem;
+        }
+
+        @include respond(tab-land){
+            font-size: 3rem;
         }
     }
 
@@ -77,6 +77,21 @@
 
     &__text-box{
         font-family: $ff-body;
-        font-size: 1.3rem;
+        font-size: 1.35rem;
+    }
+}
+
+.footer{
+    font-size: 1.5rem;
+    color: $clr-neutral-100;
+    
+    &__link{
+        font-family: $ff-cta;
+        text-decoration: none;
+        color: $clr-neutral-100;
+
+        &:hover{
+            color: $clr-primary-light;
+        }
     }
 }

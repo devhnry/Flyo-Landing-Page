@@ -96,23 +96,20 @@ body {
   @media (min-width: 56.25em) {
     .header__text--main {
       font-size: 2.65rem; } }
+  @media (min-width: 56.25em) {
+    .header__text--main {
+      font-size: 3rem; } }
 
 .header__text--sub {
   font-family: "Open Sans", sans-serif;
   font-size: 1.4rem; }
 
-.footer {
-  font-size: 1.5rem;
-  color: #f6f6fe; }
-  .footer__link {
-    font-family: "Raleway", sans-serif;
-    text-decoration: none;
-    color: #f6f6fe; }
-
 .feature__header {
   font-family: "Raleway", sans-serif;
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 1.6rem;
+  transition: all 250ms ease-in-out; }
   @media (min-width: 37.5em) {
     .feature__header {
       text-align: left;
@@ -121,6 +118,9 @@ body {
     .feature__header {
       text-align: left;
       font-size: 2.3rem; } }
+  @media (min-width: 75em) {
+    .feature__header {
+      font-size: 3rem; } }
 
 .feature__text-box {
   font-size: 1.3rem;
@@ -136,9 +136,29 @@ body {
 
 .sign-up__text-box {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.3rem; }
+  font-size: 1.35rem; }
+
+.footer {
+  font-size: 1.5rem;
+  color: #f6f6fe; }
+  .footer__link {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    color: #f6f6fe; }
+    .footer__link:hover {
+      color: #585989; }
+
+.bg-neutral-100 {
+  background: #f6f6fe; }
+
+.bg-primary-light {
+  background: #585989; }
+
+.bg-primary-dark {
+  background: #070439; }
 
 .btn {
+  cursor: pointer;
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   font-size: 1.3rem;
@@ -210,7 +230,9 @@ body {
   background: #070439;
   padding: 5rem 5rem 2rem;
   display: grid;
-  gap: 3.5rem; }
+  gap: 3.5rem;
+  max-width: 117rem;
+  margin-inline: auto; }
   @media (min-width: 37.5em) {
     .footer {
       gap: .5rem;
@@ -221,6 +243,9 @@ body {
     .footer {
       grid-template-columns: repeat(4, 1fr);
       align-items: start; } }
+  @media (min-width: 75em) {
+    .footer {
+      padding-bottom: 5rem; } }
   .footer__logo {
     filter: brightness(0) invert(1); }
     @media (min-width: 37.5em) {
@@ -261,12 +286,16 @@ body {
     .socials {
       grid-column: 4 / 4; } }
   .socials__icon {
+    cursor: pointer;
     text-align: center;
     width: 37px;
     transform: scale(70%);
     padding: 1rem;
     border: solid 1px #f6f6fe;
     border-radius: 50%; }
+    .socials__icon:hover {
+      color: #585989;
+      border: solid 1px #585989; }
 
 .header {
   display: grid;
@@ -274,15 +303,23 @@ body {
   text-align: center;
   padding: 8rem 0;
   width: 80%;
+  margin-inline: auto;
+  max-width: 120rem;
   margin-inline: auto; }
   @media (min-width: 37.5em) {
     .header {
-      width: 90%; } }
+      width: 90%;
+      max-width: 62.5rem; } }
   @media (min-width: 56.25em) {
     .header {
-      width: 87%;
+      width: 90%;
       grid-template-columns: repeat(2, 1fr);
-      align-items: center; } }
+      align-items: center;
+      max-width: 102.67rem; } }
+  @media (min-width: 75em) {
+    .header {
+      width: 95%;
+      max-width: 111.60rem; } }
   @media (min-width: 56.25em) {
     .header__img {
       grid-column-start: 2;
@@ -298,6 +335,9 @@ body {
     .header__textbox {
       grid-template-columns: repeat(1, 1fr);
       gap: 0; } }
+  @media (min-width: 75em) {
+    .header__textbox {
+      max-width: 45rem; } }
   .header__text {
     display: grid;
     gap: 2.3rem; }
@@ -307,7 +347,7 @@ body {
     margin-top: 1rem; }
     @media (min-width: 56.25em) {
       .header__form {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 60% 40%);
         gap: 1.2rem;
         align-items: center; } }
     .header__form-box {
@@ -325,9 +365,22 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-inline: 2rem;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  max-width: 1400px;
+  margin-inline: auto; }
+  @media (min-width: 37.5em) {
+    .navigation {
+      padding-inline: 3.5rem;
+      padding-top: 2.5rem; } }
+  @media (min-width: 56.25em) {
+    .navigation {
+      padding-inline: 6rem;
+      padding-top: 4rem; } }
   .navigation__logo {
     width: 8rem; }
+    @media (min-width: 56.25em) {
+      .navigation__logo {
+        width: 10rem; } }
   .navigation__list {
     display: flex;
     gap: 2rem;
@@ -337,13 +390,21 @@ body {
   width: 100vw; }
 
 .feature {
+  margin-inline: auto;
   background: #f6f6fe;
   padding: 4rem 2.5rem 8rem; }
+  @media (min-width: 37.5em) {
+    .feature {
+      max-width: 68rem; } }
   @media (min-width: 56.25em) {
     .feature {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      align-items: center; } }
+      align-items: center;
+      max-width: 102.67rem; } }
+  @media (min-width: 75em) {
+    .feature {
+      max-width: 117rem; } }
   .feature__img {
     padding-inline: 1rem;
     margin-bottom: 8rem; }
@@ -368,7 +429,15 @@ body {
     margin-bottom: 4rem; }
   .feature__text-box {
     display: grid;
-    gap: 1.5rem; }
+    gap: 1.5rem;
+    max-width: 40rem;
+    margin-inline: auto; }
+    @media (min-width: 56.25em) {
+      .feature__text-box {
+        margin-inline: 0; } }
+    @media (min-width: 75em) {
+      .feature__text-box {
+        gap: .7rem; } }
 
 .sign-up {
   text-align: center;
@@ -376,7 +445,9 @@ body {
   background: #585989;
   color: #f6f6fe;
   display: grid;
-  gap: 2rem; }
+  gap: 2rem;
+  max-width: 117rem;
+  margin-inline: auto; }
   @media (min-width: 37.5em) {
     .sign-up {
       text-align: left;
@@ -386,7 +457,11 @@ body {
       gap: 4rem; } }
   .sign-up__text-box {
     display: grid;
-    gap: 1.5rem; }
+    gap: 1.5rem;
+    max-width: 41.5rem; }
+    @media (min-width: 75em) {
+      .sign-up__text-box {
+        gap: .7rem; } }
   .sign-up__form {
     display: grid;
     gap: .8rem;
@@ -397,7 +472,8 @@ body {
       border: none;
       padding: .8rem;
       border-radius: 3px;
-      color: rgba(7, 4, 57, 0.5); }
+      color: rgba(7, 4, 57, 0.5);
+      max-width: 36rem; }
   @media (min-width: 37.5em) {
     .sign-up__button {
       max-width: 13em; } }
